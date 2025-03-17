@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'pwd'  // Print working directory
+                sh 'ls -la'  // List files
                 sh 'g++ hello.cpp -o hello_exec'
             }
         }
